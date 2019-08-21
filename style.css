@@ -1,94 +1,55 @@
-body {
-  background: black;
-  padding: 10px;
-  background-image: url(f28.jpg);
-}
-
-.shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.7;
-  z-index: 9;
-}
-
-.carousel {
+.audiojs {
+  width: 600px;
+  height: 45px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 0px;
-  z-index: 10;
-}
-.carousel .container-li {
-  position: relative;
-}
-.carousel .container-image {
-  width: 750px;
-  height: 468px;
-  display: block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  /*
-  border-radius: 55px;
-  background-color: #f1f1f1;
-  background-size: cover;
-  */
-}
-
-.gallery {
-  width: 750px;
-  height: 468px;
+  /* margin-left: -225px;
+  margin-top: -10px; */
   overflow: hidden;
+  font-family: monospace;
+  font-size: 25px;
+  background:  linear-gradient(to bottom, #2304be 0%, #447af7 50%, #2fc3d5 75%, #a2d9df 100%);
 }
 
-.gallery ul {
-  height: 130px;
-  width: 9999px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  transition: margin-left 500ms;
+.audiojs * {
+  color: #51ea13;
 }
 
-.gallery li {
-  display: inline-block;
+.audiojs p {
+    display: none;
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    cursor: pointer;
 }
 
-.prev {
-  left: -70px;
-  position: absolute;
-  top: 50%;
-  font-size: 60px;
-  background: none;
-  border: none;
-  outline: none;
-  color: white;
-  transition: transform 0.5s color 0.2s;
-  cursor: pointer;
+/* .audiojs .play-pause, */
+.audiojs .scrubber,
+.audiojs .progress,
+.audiojs .progress,
+.audiojs .time {
+  padding-top: 4px;
+}
+.audiojs .scrubber {
+  background: black;
 }
 
-.prev:active {
-  color:aqua;
+.audiojs .progress {
+  background-image: none;
+  background-color: #599ae6;
 }
 
-.next:active {
-  color:aqua;
+.audiojs .time {
+  padding-left: 55px;
 }
 
-.next {
-  right: -70px;
-  position: absolute;
-  top: 50%;
-  font-size: 60px;
-  background: none;
-  border: none;
-  outline: none;
-  color: white;
-  transition: transform 0.5s color 0.2s;
-  cursor: pointer;
+.audiojs .time em {
+  color: #51ea13;
+}
+
+.audiojs .play {
+  background-size: 39px 156px;
+  transform: translate(-25%, 0);
 }
